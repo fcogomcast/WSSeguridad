@@ -1,0 +1,5 @@
+package es.tributasenasturias.servicios.seguridadws.implementacion;
+
+public class PreferenciasException {
+
+}

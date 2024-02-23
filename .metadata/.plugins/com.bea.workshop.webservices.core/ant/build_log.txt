@@ -1,0 +1,199 @@
+Buildfile: U:\Workshop\WSSeguridad\.metadata\.plugins\com.bea.workshop.webservices.core\ant\build.xml
+Trying to override old definition of task wsgen
+
+fork_build:
+     [java] Buildfile: U:\Workshop\WSSeguridad\.metadata\.plugins\com.bea.workshop.webservices.core\ant\build.xml
+
+     [java] build:
+     [java]     [wsdlc] Download file [Seguridad.wsdl] to C:\Users\CRUBEN~1\AppData\Local\Temp\5\_ckr59b
+     [java]     [wsdlc] srcWsdl is redefined as [ C:\Users\CRUBEN~1\AppData\Local\Temp\5\_ckr59b\Seguridad.wsdl ]
+     [java]     [wsdlc] Consider using <depends>/<produces> so that wsimport won't do unnecessary compilation
+     [java]     [wsdlc] parsing WSDL...
+
+
+     [java]     [wsdlc] generating code...
+
+
+     [java]     [wsdlc] compiling code...
+
+     [java]     [wsdlc] Note: U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\Seguridad_Service.java uses unchecked or unsafe operations.
+     [java]     [wsdlc] Note: Recompile with -Xlint:unchecked for details.
+     [java] [AntUtil.javadocFiles] Generating Javadoc
+     [java] [AntUtil.javadocFiles] Javadoc execution
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\FirmarMensaje.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\FirmarMensajeAlgoritmo.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\FirmarMensajeAlgoritmoConTimestamp.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\FirmarMensajeAlgoritmoConTimestampResponse.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\FirmarMensajeAlgoritmoResponse.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\FirmarMensajeConTimestamp.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\FirmarMensajeConTimestampResponse.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\FirmarMensajeResponse.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\ObjectFactory.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\Seguridad.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\Seguridad_Service.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\ValidacionFirmaCompleta.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\ValidacionFirmaSinCertificado.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\ValidacionResponse.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\WebContent\WEB-INF\lib\generated\es\tributasenasturias\servicios\seguridadws\package-info.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\Seguridad_SeguridadSOAPImpl.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmaException.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\PreferenciasException.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\Utils.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidacionConstants.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidacionMethodResolver.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorException.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirmaSinCertificado.java...
+     [java] [AntUtil.javadocFiles] Loading source file U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\utils\Preferencias\Preferencias.java...
+     [java] [AntUtil.javadocFiles] Constructing Javadoc information...
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:5: package org.apache.ws.security does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.WSConstants;
+     [java] [AntUtil.javadocFiles]                              ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:6: package org.apache.ws.security does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.WSSConfig;
+     [java] [AntUtil.javadocFiles]                              ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:7: package org.apache.ws.security does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.WSSecurityException;
+     [java] [AntUtil.javadocFiles]                              ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:8: package org.apache.ws.security.components.crypto does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.components.crypto.Crypto;
+     [java] [AntUtil.javadocFiles]                                                ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:9: package org.apache.ws.security.components.crypto does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.components.crypto.CryptoFactory;
+     [java] [AntUtil.javadocFiles]                                                ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:10: package org.apache.ws.security.message does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.message.WSSecHeader;
+     [java] [AntUtil.javadocFiles]                                      ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:11: package org.apache.ws.security.message does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.message.WSSecSignature;
+     [java] [AntUtil.javadocFiles]                                      ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:12: package org.apache.ws.security.message does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.message.WSSecTimestamp;
+     [java] [AntUtil.javadocFiles]                                      ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:23: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class Crypto
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.FirmanteMensaje
+     [java] [AntUtil.javadocFiles] 	private Crypto crypto = null;
+     [java] [AntUtil.javadocFiles] 	        ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:53: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class WSSecurityException
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.FirmanteMensaje
+     [java] [AntUtil.javadocFiles] 	public String firmaMensaje (String mensaje, String aliasCertificado) throws FirmaException, WSSecurityException
+     [java] [AntUtil.javadocFiles] 	                                                                                            ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:89: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class WSSecurityException
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.FirmanteMensaje
+     [java] [AntUtil.javadocFiles] 	public String firmaMensajeTimestamp (String mensaje, String aliasCertificado, int intervaloSegundosExpiracion) throws FirmaException, WSSecurityException
+     [java] [AntUtil.javadocFiles] 	                                                                                                                                      ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:133: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class WSSecurityException
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.FirmanteMensaje
+     [java] [AntUtil.javadocFiles] 	public String firmaMensajeAlgoritmoTimestamp (String mensaje, String aliasCertificado, String uriAlgoritmoFirma, String uriAlgoritmoDigest,int intervaloSegundosExpiracion) throws FirmaException, WSSecurityException
+     [java] [AntUtil.javadocFiles] 	                                                                                                                                                                                                   ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:184: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class WSSecurityException
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.FirmanteMensaje
+     [java] [AntUtil.javadocFiles] 	public String firmaMensajeAlgoritmo (String mensaje, String aliasCertificado, String uriAlgoritmoFirma, String uriAlgoritmoDigest) throws FirmaException, WSSecurityException
+     [java] [AntUtil.javadocFiles] 	                                                                                                                                                          ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidacionMethodResolver.java:4: package org.apache.ws.security.validate does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.validate.SignatureTrustValidator;
+     [java] [AntUtil.javadocFiles]                                       ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidacionMethodResolver.java:5: package org.apache.ws.security.validate does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.validate.Validator;
+     [java] [AntUtil.javadocFiles]                                       ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidacionMethodResolver.java:13: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class Validator
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.ValidacionMethodResolver
+     [java] [AntUtil.javadocFiles] 	public static Validator getMethod (int tipoValidacion)
+     [java] [AntUtil.javadocFiles] 	              ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java:10: package org.apache.ws.security does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.WSSConfig;
+     [java] [AntUtil.javadocFiles]                              ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java:11: package org.apache.ws.security does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.WSSecurityEngine;
+     [java] [AntUtil.javadocFiles]                              ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java:12: package org.apache.ws.security does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.WSSecurityEngineResult;
+     [java] [AntUtil.javadocFiles]                              ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java:13: package org.apache.ws.security does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.WSSecurityException;
+     [java] [AntUtil.javadocFiles]                              ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java:14: package org.apache.ws.security.components.crypto does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.components.crypto.Crypto;
+     [java] [AntUtil.javadocFiles]                                                ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java:15: package org.apache.ws.security.components.crypto does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.components.crypto.CryptoFactory;
+     [java] [AntUtil.javadocFiles]                                                ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java:16: package org.apache.ws.security.validate does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.validate.Validator;
+     [java] [AntUtil.javadocFiles]                                       ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java:26: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class WSSecurityEngine
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.ValidadorFirma
+     [java] [AntUtil.javadocFiles] 	private WSSecurityEngine secEngine = new WSSecurityEngine();
+     [java] [AntUtil.javadocFiles] 	        ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java:27: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class Crypto
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.ValidadorFirma
+     [java] [AntUtil.javadocFiles] 	private Crypto crypto = null;
+     [java] [AntUtil.javadocFiles] 	        ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirma.java:63: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class WSSecurityException
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.ValidadorFirma
+     [java] [AntUtil.javadocFiles] 	public boolean validarFirma (String soapMsg, int tipoValidacion) throws ValidadorException, WSSecurityException
+     [java] [AntUtil.javadocFiles] 	                                                                                            ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirmaSinCertificado.java:3: package org.apache.ws.security does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.WSSecurityException;
+     [java] [AntUtil.javadocFiles]                              ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirmaSinCertificado.java:4: package org.apache.ws.security.handler does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.handler.RequestData;
+     [java] [AntUtil.javadocFiles]                                      ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirmaSinCertificado.java:5: package org.apache.ws.security.validate does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.validate.Credential;
+     [java] [AntUtil.javadocFiles]                                       ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirmaSinCertificado.java:6: package org.apache.ws.security.validate does not exist
+     [java] [AntUtil.javadocFiles] import org.apache.ws.security.validate.SignatureTrustValidator;
+     [java] [AntUtil.javadocFiles]                                       ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirmaSinCertificado.java:15: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol: class SignatureTrustValidator
+     [java] [AntUtil.javadocFiles] public class ValidadorFirmaSinCertificado extends SignatureTrustValidator {
+     [java] [AntUtil.javadocFiles]                                                   ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirmaSinCertificado.java:22: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class Credential
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.ValidadorFirmaSinCertificado
+     [java] [AntUtil.javadocFiles] public Credential validate(Credential credential, RequestData data)
+     [java] [AntUtil.javadocFiles]                            ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirmaSinCertificado.java:22: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class RequestData
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.ValidadorFirmaSinCertificado
+     [java] [AntUtil.javadocFiles] public Credential validate(Credential credential, RequestData data)
+     [java] [AntUtil.javadocFiles]                                                   ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirmaSinCertificado.java:22: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class Credential
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.ValidadorFirmaSinCertificado
+     [java] [AntUtil.javadocFiles] public Credential validate(Credential credential, RequestData data)
+     [java] [AntUtil.javadocFiles]        ^
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\ValidadorFirmaSinCertificado.java:23: cannot find symbol
+     [java] [AntUtil.javadocFiles] symbol  : class WSSecurityException
+     [java] [AntUtil.javadocFiles] location: class es.tributasenasturias.servicios.seguridadws.implementacion.ValidadorFirmaSinCertificado
+     [java] [AntUtil.javadocFiles] 		throws WSSecurityException {
+     [java] [AntUtil.javadocFiles] 		       ^
+     [java] [AntUtil.javadocFiles] Standard Doclet version 1.6.0_05
+     [java] [AntUtil.javadocFiles] Building tree for all the packages and classes...
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\utils\Preferencias\Preferencias.java:258: warning - Tag @link: reference not found: PrivateKeyEntry
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:53: warning - @return tag has no arguments.
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:133: warning - @return tag has no arguments.
+     [java] [AntUtil.javadocFiles] U:\Workshop\WSSeguridad\WSSeguridad\src\es\tributasenasturias\servicios\seguridadws\implementacion\FirmanteMensaje.java:89: warning - @return tag has no arguments.
+     [java] [AntUtil.javadocFiles] Building index for all the packages and classes...
+     [java] [AntUtil.javadocFiles] Building index for all classes...
+     [java] [AntUtil.javadocFiles] Generating U:\Workshop\WSSeguridad\WSSeguridad\javadoc\stylesheet.css...
+     [java] [AntUtil.javadocFiles] 39 warnings
+     [java] [AntUtil.deleteDir] Deleting directory C:\Users\CRUBEN~1\AppData\Local\Temp\5\_ckr59b
+
+     [java] BUILD SUCCESSFUL
+     [java] Total time: 9 seconds
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL
+Total time: 11 seconds

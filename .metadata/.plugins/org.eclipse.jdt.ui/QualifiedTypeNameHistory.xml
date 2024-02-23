@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.w3c.dom.Document"/>
+<fullyQualifiedTypeName name="java.security.KeyStoreException"/>
+<fullyQualifiedTypeName name="java.security.KeyStore.PrivateKeyEntry"/>
+<fullyQualifiedTypeName name="es.tributasenasturias.servicios.seguridadws.implementacion.Preferencias"/>
+<fullyQualifiedTypeName name="javax.xml.ws.WebServiceException"/>
+<fullyQualifiedTypeName name="org.apache.ws.security.message.WSSecTimestamp"/>
+<fullyQualifiedTypeName name="org.apache.ws.security.WSConstants"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,144 @@
+package es.tributasenasturias.servicios.seguridadws.implementacion;
+
+import java.util.Properties;
+
+import org.apache.ws.security.WSConstants;
+import org.apache.ws.security.WSSConfig;
+import org.apache.ws.security.WSSecurityException;
+import org.apache.ws.security.components.crypto.Crypto;
+import org.apache.ws.security.components.crypto.CryptoFactory;
+import org.apache.ws.security.message.WSSecHeader;
+import org.apache.ws.security.message.WSSecSignature;
+import org.apache.ws.security.message.WSSecTimestamp;
+import org.w3c.dom.Document;
+
+import es.tributasenasturias.utils.Preferencias.Preferencias;
+
+/**
+ * Funcionalidad de firma de mensaje. Por el momento es una implementación muy sencilla, para comprobar que es correcta.
+ * @author crubencvs
+ *
+ */
+public class FirmanteMensaje{
+	private Crypto crypto = null;
+	Preferencias preferencias;
+	public FirmanteMensaje() throws FirmaException{
+		try {
+			preferencias =new Preferencias();
+		} catch (PreferenciasException e) {
+			throw new FirmaException ("Error al recuperar las preferencias:"+e.getMessage(),e);
+		}
+		WSSConfig.init();
+		try {
+			Properties prop = new Properties();
+			//Valores por defecto, deberían cargarse de configuración.
+			prop.put("org.apache.ws.security.crypto.provider", "org.apache.ws.security.components.crypto.Merlin");
+			prop.put("org.apache.ws.security.crypto.merlin.keystore.file", preferencias.getAlmacen());
+			prop.put("org.apache.ws.security.crypto.merlin.keystore.password", preferencias.getClaveAlmacen());
+			prop.put("org.apache.ws.security.crypto.merlin.keystore.type", "jks");
+			crypto = CryptoFactory.getInstance(prop);
+		} catch (WSSecurityException e) {
+			throw new FirmaException ("Error al recuperar la instancia de 'Crypto':"+e.getMessage(),e);
+		}
+	}
+	public String firmaMensaje (String mensaje, String aliasCertificado) throws FirmaException, WSSecurityException
+	{
+		WSSecSignature builder = new WSSecSignature();
+		builder.setKeyIdentifierType(WSConstants.BST_DIRECT_REFERENCE);
+		Document doc=null;
+		try {
+			doc = Utils.string2Doc(mensaje);
+		} catch (Exception e) {
+			throw new FirmaException ("Error al convertir el mensaje a un documento XML:" + e.getMessage(),e);
+		}
+		 WSSecHeader secHeader = new WSSecHeader();
+		 secHeader.insertSecurityHeader(doc);
+		 secHeader.setMustUnderstand(true); //Deben entender las cabeceras de seguridad.
+		 //Se recupera el certificado.
+		 builder.setUserInfo(preferencias.getCertificado(aliasCertificado), preferencias.getClaveCertificado(aliasCertificado));
+		 Document signedDoc = builder.build(doc, crypto, secHeader);
+		//Documento firmado, se pasa a texto.
+		 try{
+			 return Utils.doc2String(signedDoc);
+		 }
+		 catch (Exception e)
+		 {
+			 throw new FirmaException ("Error al convertir el mensaje firmado a texto para devolver:"+ e.getMessage(),e);
+		 }
+	}
+	//CRUBENCVS 07/10/2022
+	/**
+	 * Realiza la firma de un mensaje según WS-Security, indicando el intervalo en segundos durante el que es válido el mensaje.
+	 * Si se indica un intervalo de "0", se comportará como la operación "firmaMensaje".
+	 * @param mensaje
+	 * @param aliasCertificado
+	 * @return
+	 * @throws FirmaException
+	 * @throws WSSecurityException
+	 */
+	public String firmaMensajeTimestamp (String mensaje, String aliasCertificado, int intervaloSegundosExpiracion) throws FirmaException, WSSecurityException
+	{
+		WSSecSignature builder = new WSSecSignature();
+		builder.setKeyIdentifierType(WSConstants.BST_DIRECT_REFERENCE);
+		Document doc=null;
+		try {
+			doc = Utils.string2Doc(mensaje);
+		} catch (Exception e) {
+			throw new FirmaException ("Error al convertir el mensaje a un documento XML:" + e.getMessage(),e);
+		}
+		 WSSecHeader secHeader = new WSSecHeader();
+		 secHeader.insertSecurityHeader(doc);
+		 secHeader.setMustUnderstand(true); //Deben entender las cabeceras de seguridad.
+		 if (intervaloSegundosExpiracion > 0) {
+			 WSSecTimestamp timestamp = new WSSecTimestamp();
+			 timestamp.setTimeToLive(intervaloSegundosExpiracion);
+			 doc=timestamp.build(doc, secHeader);
+		 }
+		 //Se recupera el certificado.
+		 builder.setUserInfo(preferencias.getCertificado(aliasCertificado), preferencias.getClaveCertificado(aliasCertificado));
+		 Document signedDoc = builder.build(doc, crypto, secHeader);
+		//Documento firmado, se pasa a texto.
+		 try{
+			 return Utils.doc2String(signedDoc);
+		 }
+		 catch (Exception e)
+		 {
+			 throw new FirmaException ("Error al convertir el mensaje firmado a texto para devolver:"+ e.getMessage(),e);
+		 }
+	}
+	/**
+	 * Firma de un mensaje SOAP indicando las URIS de algoritmo de firma y de digest
+	 * @param mensaje
+	 * @param aliasCertificado
+	 * @return Texto representando al SOAP firmado
+	 * @throws FirmaException
+	 * @throws WSSecurityException
+	 */
+	public String firmaMensajeAlgoritmo (String mensaje, String aliasCertificado, String uriAlgoritmoFirma, String uriAlgoritmoDigest) throws FirmaException, WSSecurityException
+	{
+		WSSecSignature builder = new WSSecSignature();
+		builder.setKeyIdentifierType(WSConstants.BST_DIRECT_REFERENCE);
+		builder.setSignatureAlgorithm(uriAlgoritmoFirma);
+		builder.setDigestAlgo(uriAlgoritmoDigest);
+		Document doc=null;
+		try {
+			doc = Utils.string2Doc(mensaje);
+		} catch (Exception e) {
+			throw new FirmaException ("Error al convertir el mensaje a un documento XML:" + e.getMessage(),e);
+		}
+		 WSSecHeader secHeader = new WSSecHeader();
+		 secHeader.insertSecurityHeader(doc);
+		 secHeader.setMustUnderstand(true); //Deben entender las cabeceras de seguridad.
+		 //Se recupera el certificado.
+		 builder.setUserInfo(preferencias.getCertificado(aliasCertificado), preferencias.getClaveCertificado(aliasCertificado));
+		 Document signedDoc = builder.build(doc, crypto, secHeader);
+		//Documento firmado, se pasa a texto.
+		 try{
+			 return Utils.doc2String(signedDoc);
+		 }
+		 catch (Exception e)
+		 {
+			 throw new FirmaException ("Error al convertir el mensaje firmado a texto para devolver:"+ e.getMessage(),e);
+		 }
+	}
+}

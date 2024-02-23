@@ -1,0 +1,9 @@
+No es necesario indicar el fichero "PersonalizacionWSDL.xml" como JAXB 
+al generar la implementación de servicio con 
+"Generate Web Service using WSDLC/JAXB Binding for WSDLC".
+
+Lo único que hace es poner como paquete de la clase generada 
+"es.tributasenasturias.servicios.seguridadws"
+
+
+Si se pone ese paquete al generar, ya no es necesario hacer nada más. 
